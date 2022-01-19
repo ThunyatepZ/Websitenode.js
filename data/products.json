@@ -1,0 +1,19 @@
+{
+    "products": [
+        {   
+            "id": 0,
+            "producttitle": "น้ำเปล่า",
+            "productde": "ดี"
+        },
+        {
+            "id": 1,
+            "producttitle": "น้ำเปล่า2",
+            "productde": "ดี2"
+        },
+        {
+            "id": 2,
+            "producttitle": "น้ำเปล่า3",
+            "productde": "ดี3"
+        }
+    ]
+}
