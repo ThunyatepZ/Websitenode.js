@@ -3,7 +3,7 @@ const chalk = require('chalk')
 const debug = require('debug')('app');
 const morgan = require('morgan');
 const path = require('path');
-const products = require("./data/products.json")
+const products = require("./data/products.json");
 const productRouter = express.Router();
 
 const app = express();
@@ -19,11 +19,12 @@ productRouter.route("/").get((req, res) => {
     res.render('Products',
         products,
     );
-    
+
 });
 
-productRouter.route("/1").get((req, res) => {
-    res.send("Hello boi");
+productRouter.route("/:id").get((req, res) => {
+    const id = req.params.id;
+    res.send("products" +id);
 });
 
 app.use("/products", productRouter)

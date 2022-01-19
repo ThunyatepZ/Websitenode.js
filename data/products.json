@@ -1,19 +1,22 @@
 {
     "products": [
-        {   
+        {
             "id": 0,
             "producttitle": "น้ำเปล่า",
-            "productde": "ดี"
+            "productde": "ดี",
+            "productprice": 20
         },
         {
             "id": 1,
             "producttitle": "น้ำเปล่า2",
-            "productde": "ดี2"
+            "productde": "ดี2",
+            "productprice": 30
         },
         {
             "id": 2,
             "producttitle": "น้ำเปล่า3",
-            "productde": "ดี3"
+            "productde": "ดี3",
+            "productprice": 40
         }
     ]
 }

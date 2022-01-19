@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head></head>
 
 <body>
+    <h1>Products</h1>
+    <%products.map((product)=>{ %>
+        <h4>
+           <a href="/products/<%=product.id%>"><%=product.producttitle %></a>
+                
 
-    <section id="features" class="ud-features">
-        <div class="container">
-            <h1>Hello world</h1>
-            <%products.map((product)=>{ %>
-                <h4>
-                    <a href="/products/<%products.id%>"><%=product.producttitle %></a>
-                </h4>
-                <p>
-                    <%=product.productde%>
-                </p>
-                <% })%>
+        </h4>
+        <p>
+            <%=product.productde%>
+            ราคา : <%=product.productprice%>
+        </p>
+        <% })%>
 </body>
+
+</html>
